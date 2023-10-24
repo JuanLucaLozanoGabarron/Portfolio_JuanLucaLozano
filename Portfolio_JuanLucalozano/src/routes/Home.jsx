@@ -28,9 +28,9 @@ export default function Home() {
           </p>
           <img src={DiscoverProject} />
         </div>
-        <div className="me">
+        {/* <div className="me">
           <img src={Me} />
-        </div>
+        </div> */}
       </div>
       <Discover />
       <div className="goUp">
