@@ -1,49 +1,44 @@
 .homepage {
-  width: 100vh;
+  padding: 120px;
 }
 
 .info {
-  margin-left: 160px;
-  padding-top: 200px;
-  z-index: 4;
-  width: 700px;
+  width: 250px;
 }
 
 .info h1 {
-  font-size: 100px;
-  font-weight: 100;
+  font-size: 40px;
 }
-
-#type {
-  margin-bottom: -60px;
-}
-
-#info {
-  margin-top: -40px;
+.info p {
+  font-size: 12px;
 }
 
 .info img {
-  margin-top: 40px;
-  width: 100px;
+  width: 80px;
+  margin-top: 30px;
 }
 
 .me {
-  margin-top: 40px;
+  width: 250px;
 }
 
 .me img {
-  width: 700px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .goUp {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  align-items: center;
+  width: 200px;
+  padding-left: 120px;
+  margin-top: -30px;
+  margin-bottom: 60px;
 }
 
 .goUp img {
-  width: 150px;
+  width: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -54,6 +49,7 @@
 
   .info {
     margin-left: 250px;
+    margin-top: 200px;
     z-index: 4;
     width: 700px;
   }
