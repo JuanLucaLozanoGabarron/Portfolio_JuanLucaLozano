@@ -27,12 +27,25 @@
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .discover {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 200px;
     padding: 0px;
+  }
+
+  .imageFind {
+    display: initial;
+    border: 1px solid;
+  }
+  .imageFind img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover {
+    margin-top: 200px;
   }
 
   .infoFind {
@@ -48,9 +61,8 @@
     margin-top: -40px;
   }
 
-  .imageFind {
-    display: initial;
-    border: 1px solid;
+  .imageFind img {
+    width: 400px;
   }
 
   .categories img {

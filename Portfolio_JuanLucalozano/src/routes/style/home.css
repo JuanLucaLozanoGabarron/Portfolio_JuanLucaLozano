@@ -44,17 +44,52 @@
   width: 80px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .homepage {
     display: flex;
     flex-direction: row;
+    padding-top: 0px;
+  }
+
+  .info {
+    margin-top: 150px;
+    z-index: 4;
+  }
+
+  .me {
+    z-index: 2;
+    width: 400px;
+    margin-top: 150px;
+    position: absolute;
+    right: 0px;
+    padding-top: 40px;
+  }
+
+  .me img {
+    margin-top: 20px;
+  }
+
+  .goUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .goUp img {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homepage {
     padding: 0px;
   }
 
   .info {
     margin-left: 250px;
     margin-top: 200px;
-    z-index: 4;
     width: 700px;
   }
 
@@ -81,12 +116,7 @@
   }
 
   .me {
-    z-index: 2;
     width: 700px;
-    margin-top: 200px;
-    position: absolute;
-    right: 0px;
-    padding-top: 40px;
   }
 
   .me img {
@@ -94,10 +124,6 @@
   }
 
   .goUp {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
     width: 90%;
   }
 
