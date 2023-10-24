@@ -48,6 +48,7 @@
   .homepage {
     display: flex;
     flex-direction: row;
+    padding: 0px;
   }
 
   .info {
@@ -85,6 +86,7 @@
     margin-top: 200px;
     position: absolute;
     right: 0px;
+    padding-top: 40px;
   }
 
   .me img {
@@ -96,6 +98,7 @@
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 40px;
+    width: 90%;
   }
 
   .goUp img {
