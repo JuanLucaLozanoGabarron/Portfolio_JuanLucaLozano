@@ -1,9 +1,11 @@
 .homepage {
-  padding: 120px;
+  padding: 110px 90px;
 }
 
 .info {
-  width: 250px;
+  position: relative;
+  width: 280px;
+  z-index: 8;
 }
 
 .info h1 {
@@ -19,11 +21,12 @@
 }
 
 .me {
-  width: 250px;
+  width: 280px;
+  z-index: 1;
 }
 
 .me img {
-  margin-top: 30px;
+  margin-top: -50px;
   width: 100%;
 }
 
@@ -31,8 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  padding-left: 120px;
+  width: 280px;
+  padding-left: 90px;
   margin-top: -30px;
   margin-bottom: 60px;
 }

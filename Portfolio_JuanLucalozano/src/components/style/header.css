@@ -21,14 +21,14 @@
   position: absolute;
   top: 30px;
   right: 10px;
-  z-index: 6;
+  z-index: 10;
   visibility: visible;
 }
 
 .hamburger-icon {
   cursor: pointer;
   padding: 10px;
-  background-color: #7F867B;
+  background-color: #7f867b;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -59,6 +59,7 @@
 }
 
 .menu {
+  margin-top: 20px;
   display: block;
   background-color: #e3e4e0;
   padding: 10px;

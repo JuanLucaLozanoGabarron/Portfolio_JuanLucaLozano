@@ -19,7 +19,7 @@ export default function Discover() {
             Throughout my academic years, I have carried out several projects
             for my courses.
             <br />
-            So there will be 3 types of work that you could find.
+            So there will be 4 types of work that you could find.
             <br />
             <br />
             Each work will be commented by an explanation of project and

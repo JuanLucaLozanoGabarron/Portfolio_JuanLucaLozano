@@ -1,10 +1,10 @@
 .discover {
-  padding: 0px 120px 120px 120px;
-  margin-top: _60px;
+  padding: 0px 90px 90px 90px;
+  margin-top: -60px;
 }
 
 .infoFind {
-  width: 250px;
+  width: 280px;
 }
 
 .infoFind h1 {
@@ -20,7 +20,7 @@
 }
 
 .categories {
-  width: 250px;
+  width: 280px;
 }
 
 .categories img {
