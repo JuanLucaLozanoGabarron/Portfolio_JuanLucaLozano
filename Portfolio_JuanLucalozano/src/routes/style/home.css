@@ -1,0 +1,105 @@
+.homepage {
+  width: 100vh;
+}
+
+.info {
+  margin-left: 160px;
+  padding-top: 200px;
+  z-index: 4;
+  width: 700px;
+}
+
+.info h1 {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+#type {
+  margin-bottom: -60px;
+}
+
+#info {
+  margin-top: -40px;
+}
+
+.info img {
+  margin-top: 40px;
+  width: 100px;
+}
+
+.me {
+  margin-top: 40px;
+}
+
+.me img {
+  width: 700px;
+}
+
+.goUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.goUp img {
+  width: 150px;
+}
+
+@media (min-width: 1024px) {
+  .homepage {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info {
+    margin-left: 250px;
+    z-index: 4;
+    width: 700px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .info h1 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  #type {
+    margin-bottom: -60px;
+  }
+
+  #info {
+    margin-top: -40px;
+  }
+
+  .info img {
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  .me {
+    z-index: 2;
+    width: 700px;
+    margin-top: 200px;
+    position: absolute;
+    right: 0px;
+  }
+
+  .me img {
+    width: 700px;
+  }
+
+  .goUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .goUp img {
+    width: 150px;
+  }
+}
