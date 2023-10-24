@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style/header.css";
 import Logo from "./images/logo.png";
 import Arrow from "./images/arrow_right.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,11 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <div className="logo">
-          <img src={Logo} />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img src={Logo} />
+          </div>
+        </Link>
 
         <div className="hamburger-menu">
           <div
@@ -29,16 +32,24 @@ export default function Header() {
             <div className="menu">
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">
+                    <a>Home</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">My Projects</a>
+                  <Link to="/my_projects">
+                    <a href="#">My Projects</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">About Me</a>
+                  <Link to="/about_me">
+                    <a href="#">About Me</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Contact Me</a>
+                  <Link to="/contact_me">
+                    <a href="#">Contact Me</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -47,25 +58,31 @@ export default function Header() {
 
         <div className="navigation">
           <div className="projects">
-            <div className="text">
-              <p>My Projects</p>
-            </div>
+            <Link to="/my_projects">
+              <div className="text">
+                <p>My Projects</p>
+              </div>
+            </Link>
             <div className="image">
               <img src={Arrow} />
             </div>
           </div>
           <div className="aboutMe">
-            <div className="text">
-              <p>About Me</p>
-            </div>
+            <Link to="/about_me">
+              <div className="text">
+                <p>About Me</p>
+              </div>
+            </Link>
             <div className="image">
               <img src={Arrow} />
             </div>
           </div>
           <div className="contact">
-            <div className="text">
-              <p>Contact Me</p>
-            </div>
+            <Link to="/contact_me">
+              <div className="text">
+                <p>Contact Me</p>
+              </div>
+            </Link>
             <div className="image">
               <img src={Arrow} />
             </div>
@@ -75,6 +92,3 @@ export default function Header() {
     </>
   );
 }
-
-
-
