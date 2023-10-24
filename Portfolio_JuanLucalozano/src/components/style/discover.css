@@ -3,6 +3,10 @@
   margin-top: _60px;
 }
 
+.infoFind {
+  width: 250px;
+}
+
 .infoFind h1 {
   font-size: 40px;
 }
