@@ -1,0 +1,17 @@
+.projects {
+  padding: 110px 90px;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    padding: 0px;
+  }
+}
