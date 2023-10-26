@@ -38,17 +38,17 @@ export default function Header() {
                 </li>
                 <li>
                   <Link to="/my_projects">
-                    <a href="#">My Projects</a>
+                    <a>My Projects</a>
                   </Link>
                 </li>
                 <li>
                   <Link to="/about_me">
-                    <a href="#">About Me</a>
+                    <a>About Me</a>
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact_me">
-                    <a href="#">Contact Me</a>
+                    <a>Contact Me</a>
                   </Link>
                 </li>
               </ul>
