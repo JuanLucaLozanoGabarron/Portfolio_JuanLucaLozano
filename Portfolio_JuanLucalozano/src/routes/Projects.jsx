@@ -9,7 +9,7 @@ export default function Projects() {
     <div>
       <Header />
       <Follow />
-      <div className="projects">
+      <div className="projectList">
         <WearTheBest />
       </div>
     </div>

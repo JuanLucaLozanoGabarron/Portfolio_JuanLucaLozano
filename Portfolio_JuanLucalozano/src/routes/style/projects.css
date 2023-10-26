@@ -1,9 +1,9 @@
-.projects {
+.projectList {
   padding: 110px 90px;
 }
 
 @media (min-width: 768px) {
-  .projects {
+  .projectList {
     display: flex;
     flex-direction: row;
     padding-top: 0px;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 1024px) {
-  .projects {
+  .projectList {
     padding: 0px;
   }
 }
