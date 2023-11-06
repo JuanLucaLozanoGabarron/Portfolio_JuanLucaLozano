@@ -3,6 +3,8 @@ import "./style/projects.css";
 import Header from "../components/Header.jsx";
 import Follow from "../components/Follow.jsx";
 import WearTheBest from "../components/WearTheBest";
+import Multipharma from "../components/Multipharma";
+import EvolutionCamera from "../components/EvolutionCamera";
 
 export default function Projects() {
   return (
@@ -11,6 +13,10 @@ export default function Projects() {
       <Follow />
       <div className="projectList">
         <WearTheBest />
+        <hr />
+        <Multipharma />
+        <hr />
+        <EvolutionCamera />
       </div>
     </div>
   );
