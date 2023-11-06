@@ -24,7 +24,7 @@ export default function WearTheBest() {
         </p>
         <img src={Discover} />
       </div>
-      <div className="demostration">
+      <div className="demonstration">
         <img id="HomeWear" src={HomeWear} />
         <img id="TopicWear" src={TopicWear} />
       </div>

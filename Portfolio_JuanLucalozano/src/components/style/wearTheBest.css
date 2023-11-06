@@ -21,12 +21,12 @@
   margin-top: 30px;
 }
 
-.demostration {
+.demonstration {
   width: 280px;
   z-index: 1;
 }
 
-.demostration img {
+.demonstration img {
   margin-top: -50px;
   width: 100%;
 }
@@ -41,6 +41,17 @@
   .information {
     margin-top: 150px;
     z-index: 4;
+  }
+
+  .demonstration {
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+
+  .demonstration img {
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
