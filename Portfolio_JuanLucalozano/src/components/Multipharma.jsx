@@ -2,11 +2,12 @@ import React from "react";
 import Discover from "../routes/images/discover_project.png";
 import "./style/multipharma.css";
 import MultipharmaImg from "./images/multipharma.png";
+import { Link } from "react-router-dom";
 
 export default function Multipharma() {
   return (
     <div id="box">
-       <div id="demonstration">
+      <div id="demonstration">
         <img id="MultipharmaImg" src={MultipharmaImg} />
       </div>
       <div id="information">
@@ -23,9 +24,15 @@ export default function Multipharma() {
           Smooth navigation and accurate information are the guidelines of this
           project.
         </p>
-        <img src={Discover} />
+        <Link
+          to={
+            "https://xd.adobe.com/view/4e2ffad9-b0bc-4a22-8a0f-9ae144c5baf8-1b7c/"
+          }
+          target="_blank"
+        >
+          <img src={Discover} />
+        </Link>
       </div>
-     
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Discover from "../routes/images/discover_project.png";
 import "./style/evolutionCamera.css";
 import Camera from "./images/camera.png";
+import { Link } from "react-router-dom";
 
 export default function EvolutionCamera() {
   return (
@@ -20,7 +21,12 @@ export default function EvolutionCamera() {
           I wanted to show them in a fun and inspiring way to make them more
           inspiring than the others.
         </p>
-        <img src={Discover} />
+        <Link
+          to={"https://wikiwall-2023.onrender.com/project/evolution_of_camera"}
+          target="_blank"
+        >
+          <img src={Discover} />
+        </Link>
       </div>
       <div className="demonstrationEvolution">
         <img src={Camera} />
