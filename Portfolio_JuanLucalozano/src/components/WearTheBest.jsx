@@ -3,6 +3,7 @@ import Discover from "../routes/images/discover_project.png";
 import "./style/wearTheBest.css";
 import HomeWear from "./images/3.png";
 import TopicWear from "./images/4.png";
+import { Link } from "react-router-dom";
 
 export default function WearTheBest() {
   return (
@@ -22,7 +23,14 @@ export default function WearTheBest() {
           lookbook of your choice. Lots of headaches in front of your wardrobe
           in the morning? Wear the best is the solution for you!
         </p>
-        <img src={Discover} />
+        <Link
+          to={
+            "https://ehb-mct.github.io/web-2-frontend-22-23-JuanLucaLozanoGabarron/dist/index.html"
+          }
+          target="_blank"
+        >
+          <img src={Discover} />
+        </Link>
       </div>
       <div className="demonstration">
         <img id="HomeWear" src={HomeWear} />
