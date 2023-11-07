@@ -42,7 +42,9 @@ export default function AboutMe() {
             </p>
           </div>
           <div className="cv">
-            <img src={Cv} />
+            <a href="https://cv-juan-luca.tiiny.site/" target="_blank">
+              <img src={Cv} />
+            </a>
           </div>
         </div>
         <div className="portrait">
