@@ -7,6 +7,8 @@ import Discover from "../components/Discover";
 import GoUp from "./images/go_up.png";
 import Me from "./images/me.jpg";
 import DiscoverProject from "./images/discover_project.png";
+import { Link } from "react-router-dom";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
@@ -26,8 +28,9 @@ export default function Home() {
             <br />
             to get to know me and discover my most beautiful projects.
           </p>
-
-          <img src={DiscoverProject} />
+          <Link to="/my_projects">
+            <img src={DiscoverProject} />
+          </Link>
         </div>
         <div className="me">
           <img src={Me} />
