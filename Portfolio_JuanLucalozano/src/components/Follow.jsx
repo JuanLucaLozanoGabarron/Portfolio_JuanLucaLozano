@@ -14,7 +14,7 @@ export default function Follow() {
         <img src={LinkedIn} />
       </Link>
       <Link
-        to={"https://www.instagram.com/lj_design.official/?hl=fr"}
+        to={"https://www.instagram.com/jl_gabarron.official/?hl=fr"}
         target="_blank"
       >
         <img src={Insta} />
