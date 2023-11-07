@@ -17,6 +17,7 @@ export default function Projects() {
         <Multipharma />
         <hr />
         <EvolutionCamera />
+        <hr />
       </div>
     </div>
   );

@@ -25,4 +25,11 @@ hr {
   .projectList {
     padding: 0px;
   }
+
+  hr {
+    margin-top: 140px;
+    margin-left: 250px;
+    width: 1024px;
+    text-align: center;
+  }
 }
