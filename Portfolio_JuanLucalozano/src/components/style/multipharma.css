@@ -1,3 +1,8 @@
+#box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 #information {
   position: relative;
   width: 280px;
@@ -34,7 +39,7 @@
 @media (min-width: 768px) {
   #box {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding-top: 0px;
     margin-left: 20px;
   }
@@ -59,12 +64,12 @@
 @media (min-width: 1024px) {
   #box {
     padding: 0px;
-    margin-left: 250px;
+    margin-left: -100px;
   }
 
   #information {
-    margin-top: 200px;
-    width: 700px;
+    margin-top: 100px;
+    width: 600px;
   }
 
   #information p {
@@ -72,17 +77,20 @@
   }
 
   #information h1 {
-    font-size: 100px;
-    font-weight: 100;
-  }
-
-  #information h1 {
-    font-size: 20px;
+    font-size: 80px;
     font-weight: 100;
   }
 
   #information img {
     margin-top: 40px;
     width: 100px;
+  }
+
+  #demonstration {
+    margin-left: 335px;
+  }
+
+  #demonstration img {
+    margin-top: 60px;
   }
 }

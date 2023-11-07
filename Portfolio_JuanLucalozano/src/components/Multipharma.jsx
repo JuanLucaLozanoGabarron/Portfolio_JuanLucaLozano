@@ -6,6 +6,9 @@ import MultipharmaImg from "./images/multipharma.png";
 export default function Multipharma() {
   return (
     <div id="box">
+       <div id="demonstration">
+        <img id="MultipharmaImg" src={MultipharmaImg} />
+      </div>
       <div id="information">
         <h1>Multipharma</h1>
         <h3>UX / UI Design</h3>
@@ -22,9 +25,7 @@ export default function Multipharma() {
         </p>
         <img src={Discover} />
       </div>
-      <div id="demonstration">
-        <img id="MultipharmaImg" src={MultipharmaImg} />
-      </div>
+     
     </div>
   );
 }
