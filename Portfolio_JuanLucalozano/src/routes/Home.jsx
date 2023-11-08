@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../App.css";
 import "./style/home.css";
 import Header from "../components/Header";
@@ -11,22 +11,27 @@ import { Link } from "react-router-dom";
 import Video from "./images/JL.mp4";
 export default function Home() {
   const [showVideo, setShowVideo] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowVideo(false);
+    }, 7500);
+  }, []);
   return (
     <>
       {showVideo ? (
-        <div className="videoContainer">
-          <video
-            onEnded={() => {
-              setShowVideo(false);
-            }}
-            muted
-            autoPlay
-            preload="none"
-            playsInlinev
-          >
-            <source src={Video} type="video/mp4" />
-          </video>
-        </div>
+        <div
+          className="videoContainer"
+          dangerouslySetInnerHTML={{
+            __html: `
+        <video
+          muted
+          autoplay
+          playsinline
+          src=${Video}
+        />,
+      `,
+          }}
+        ></div>
       ) : (
         <>
           {" "}
