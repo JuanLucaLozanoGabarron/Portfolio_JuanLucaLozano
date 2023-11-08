@@ -17,11 +17,11 @@ export default function Home() {
       {showVideo ? (
         <div className="videoContainer">
           <video
-            muted
             onEnded={() => {
               setShowVideo(false);
             }}
-            autoPlay
+            autoPlay="autoplay"
+            muted
           >
             <source src={Video} type="video/mp4" />
           </video>
