@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../App.css";
 import "./style/home.css";
 import Header from "../components/Header";
@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import Video from "./images/JL.mp4";
 export default function Home() {
   const [showVideo, setShowVideo] = useState(true);
-
   return (
     <>
       {showVideo ? (
@@ -20,8 +19,8 @@ export default function Home() {
             onEnded={() => {
               setShowVideo(false);
             }}
-            autoPlay="autoplay"
-            muted
+            autoPlay
+            muted={true}
           >
             <source src={Video} type="video/mp4" />
           </video>
