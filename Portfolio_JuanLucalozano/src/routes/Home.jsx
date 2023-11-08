@@ -20,7 +20,8 @@ export default function Home() {
               setShowVideo(false);
             }}
             autoPlay
-            muted={true}
+            muted
+            preload="none"
           >
             <source src={Video} type="video/mp4" />
           </video>
