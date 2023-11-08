@@ -22,6 +22,7 @@ export default function Home() {
             autoPlay
             muted
             preload="none"
+            playsInlinev
           >
             <source src={Video} type="video/mp4" />
           </video>
