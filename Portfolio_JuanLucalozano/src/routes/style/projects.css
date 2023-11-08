@@ -8,6 +8,10 @@ hr {
   margin: 40px 0px;
 }
 
+#lastlast {
+  color: transparent;
+}
+
 @media (min-width: 768px) {
   .projectList {
     display: flex;

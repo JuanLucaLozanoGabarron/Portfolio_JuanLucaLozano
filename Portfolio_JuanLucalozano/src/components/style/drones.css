@@ -1,0 +1,101 @@
+#boxDrones {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#informationDrones {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+#titleDrones {
+  font-size: 40px;
+}
+
+#informationDrones h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#informationDrones p {
+  font-size: 12px;
+}
+
+#informationDrones img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+#demonstrationDrones {
+  width: 280px;
+  z-index: 1;
+}
+
+#DronesImg {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #boxDrones {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
+
+  #informationDrones {
+    margin-top: 40px;
+    z-index: 4;
+    padding-left: 20px;
+  }
+
+  #demonstrationDrones {
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  #DronesImg {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #boxDrones {
+    padding: 0px;
+    margin-left: -100px;
+    margin-top: -80px;
+  }
+
+  #informationDrones {
+    margin-top: 100px;
+    width: 450px;
+  }
+
+  #informationDrones p {
+    font-size: 14px;
+  }
+
+  #titleDrones {
+    font-size: 80px;
+    font-weight: 100;
+    margin-left: 250px;
+    margin-top: 100px;
+  }
+
+  #informationDrones img {
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  #demonstrationDrones {
+    margin-left: 335px;
+    width: 600px;
+    height: 400px;
+  }
+
+  #DronesImg {
+    margin-top: 60px;
+    height: 100%;
+  }
+}

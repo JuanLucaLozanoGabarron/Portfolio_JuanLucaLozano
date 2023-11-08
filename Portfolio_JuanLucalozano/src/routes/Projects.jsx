@@ -5,6 +5,7 @@ import Follow from "../components/Follow.jsx";
 import WearTheBest from "../components/WearTheBest";
 import Multipharma from "../components/Multipharma";
 import EvolutionCamera from "../components/EvolutionCamera";
+import Drones from "../components/Drones";
 
 export default function Projects() {
   return (
@@ -18,6 +19,8 @@ export default function Projects() {
         <hr />
         <EvolutionCamera />
         <hr />
+        <Drones />
+        <hr id="last"/>
       </div>
     </div>
   );
