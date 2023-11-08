@@ -19,8 +19,8 @@ export default function Home() {
             onEnded={() => {
               setShowVideo(false);
             }}
-            autoPlay
             muted
+            autoPlay
             preload="none"
             playsInlinev
           >
