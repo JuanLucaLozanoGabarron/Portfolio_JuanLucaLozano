@@ -20,7 +20,7 @@ export default function Projects() {
       <Follow />
       <div className="projectList">
         <motion.div
-          initial={{ opacity: 0, x: "0px" }}
+          initial={{ opacity: 0, x: "-200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
           transition={{
             duration: 1,
@@ -31,7 +31,7 @@ export default function Projects() {
         </motion.div>
         <hr />
         <motion.div
-          initial={{ opacity: 0, x: "2px" }}
+          initial={{ opacity: 0, x: "200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
           transition={{
             duration: 1,
@@ -42,7 +42,7 @@ export default function Projects() {
         </motion.div>
         <hr />
         <motion.div
-          initial={{ opacity: 0, x: "0px" }}
+          initial={{ opacity: 0, x: "-200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
           transition={{
             duration: 1,
@@ -53,7 +53,7 @@ export default function Projects() {
         </motion.div>
         <hr />
         <motion.div
-          initial={{ opacity: 0, x: "2px" }}
+          initial={{ opacity: 0, x: "200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
           transition={{
             duration: 1,

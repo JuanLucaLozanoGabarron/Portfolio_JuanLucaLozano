@@ -20,6 +20,7 @@
 
 .homepage {
   padding: 110px 90px;
+  overflow: hidden;
 }
 
 .info {
