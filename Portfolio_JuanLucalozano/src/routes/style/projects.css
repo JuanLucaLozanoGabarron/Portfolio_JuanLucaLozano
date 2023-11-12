@@ -12,6 +12,20 @@ hr {
   color: transparent;
 }
 
+.goUpProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.goUpProjects img {
+  width: 80px;
+}
+
 @media (min-width: 768px) {
   .projectList {
     display: flex;
@@ -22,6 +36,18 @@ hr {
   hr {
     margin-top: 140px;
     width: 600px;
+  }
+
+  .goUpProjects {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .goUpProjects img {
+    width: 80px;
   }
 }
 
@@ -35,5 +61,10 @@ hr {
     margin-left: 250px;
     width: 1024px;
     text-align: center;
+  }
+
+  .goUpProjects img {
+    width: 150px;
+    margin-top: 30px;
   }
 }

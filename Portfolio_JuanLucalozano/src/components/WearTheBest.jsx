@@ -4,6 +4,7 @@ import "./style/wearTheBest.css";
 import HomeWear from "./images/3.png";
 import TopicWear from "./images/4.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function WearTheBest() {
   return (
@@ -29,7 +30,13 @@ export default function WearTheBest() {
           }
           target="_blank"
         >
-          <img src={Discover} />
+          <motion.div
+            className="discoverPorject"
+            whileHover={{ scale: 1.4 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <img src={Discover} />
+          </motion.div>
         </Link>
       </div>
       <div className="demonstration">

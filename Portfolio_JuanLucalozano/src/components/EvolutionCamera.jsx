@@ -3,6 +3,7 @@ import Discover from "../routes/images/discover_project.png";
 import "./style/evolutionCamera.css";
 import Camera from "./images/camera.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function EvolutionCamera() {
   return (
@@ -25,7 +26,13 @@ export default function EvolutionCamera() {
           to={"https://wikiwall-2023.onrender.com/project/evolution_of_camera"}
           target="_blank"
         >
-          <img src={Discover} />
+          <motion.div
+            className="discoverPorject"
+            whileHover={{ scale: 1.4 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <img src={Discover} />
+          </motion.div>
         </Link>
       </div>
       <div className="demonstrationEvolution">

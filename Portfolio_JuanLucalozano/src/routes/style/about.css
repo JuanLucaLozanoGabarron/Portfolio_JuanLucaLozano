@@ -32,6 +32,23 @@
   margin: -200px 0px 40px 80px;
 }
 
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  animation: flip 4s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
 @media (min-width: 768px) {
   .profile {
     display: flex;
@@ -55,7 +72,7 @@
 }
 
 @media (min-width: 1024px) {
-  .about h1 {
+  .waviy span {
     font-size: 100px;
     font-weight: 100;
   }
@@ -82,9 +99,60 @@
   .cv {
     position: relative;
     top: 180px;
+    width: 100px;
+    cursor: pointer;
   }
 
   .cv img {
     width: 100px;
+    cursor: pointer;
+  }
+
+  svg {
+    display: block;
+    font: 10.5em "Montserrat";
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  }
+
+  .text-copy:nth-child(1) {
+    stroke: #4d163d;
+    animation-delay: -1;
+  }
+
+  .text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+  }
+
+  .text-copy:nth-child(3) {
+    stroke: #bd0034;
+    animation-delay: -3s;
+  }
+
+  .text-copy:nth-child(4) {
+    stroke: #bd0034;
+    animation-delay: -4s;
+  }
+
+  .text-copy:nth-child(5) {
+    stroke: #fdb731;
+    animation-delay: -5s;
+  }
+
+  @keyframes stroke-offset {
+    100% {
+      stroke-dashoffset: -35%;
+    }
   }
 }

@@ -4,8 +4,12 @@ import Header from "../components/Header";
 import Follow from "../components/Follow";
 import Cv from "./images/cv.png";
 import Portrait from "./images/portrait.png";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
+  const juan = ["J", "u", "a", "n", "-", "L", "u", "c", "a"];
+
+  const lozano = ["L", "o", "z", "a", "n", "o"];
   return (
     <>
       <Header />
@@ -13,11 +17,19 @@ export default function AboutMe() {
       <div className="profile">
         <div className="about">
           <div className="name">
-            <h1>
-              Juan-Luca
+            <div class="waviy">
+              {juan.map((char, index) => (
+                <span key={index} style={{ "--i": index + 1 }}>
+                  {char}
+                </span>
+              ))}
               <br />
-              Lozano
-            </h1>
+              {lozano.map((char, index) => (
+                <span key={index} style={{ "--i": index + 1 }}>
+                  {char}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="presentation">
             <p>
@@ -41,15 +53,26 @@ export default function AboutMe() {
               community.{" "}
             </p>
           </div>
-          <div className="cv">
+          <motion.div
+            className="cv"
+            whileHover={{ scale: 1.4 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <a href="https://cv-juan-luca.tiiny.site/" target="_blank">
               <img src={Cv} />
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className="portrait">
+        <motion.div
+          className="portrait"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.7,
+          }}
+        >
           <img src={Portrait} />
-        </div>
+        </motion.div>
       </div>
     </>
   );

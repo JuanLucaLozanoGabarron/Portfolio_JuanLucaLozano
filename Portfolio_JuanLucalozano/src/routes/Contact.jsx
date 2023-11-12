@@ -4,6 +4,7 @@ import "./style/contact.css";
 import Header from "../components/Header.jsx";
 import Follow from "../components/Follow.jsx";
 import HandByHand from "./images/contact.png";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const form = useRef();
@@ -66,14 +67,26 @@ export default function Contact() {
               placeholder="Message "
               name="message"
             />
-            <button type="submit" value="Send">
+            <motion.button
+              type="submit"
+              value="Send"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+            >
               <p>Submit</p>
-            </button>
+            </motion.button>
           </form>
         </div>
-        <div className="handByHand">
+        <motion.div
+          className="handByHand"
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.7,
+          }}
+        >
           <img src={HandByHand} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

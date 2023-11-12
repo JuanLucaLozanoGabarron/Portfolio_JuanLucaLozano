@@ -3,6 +3,7 @@ import Discover from "../routes/images/discover_project.png";
 import "./style/multipharma.css";
 import MultipharmaImg from "./images/multipharma.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Multipharma() {
   return (
@@ -30,7 +31,13 @@ export default function Multipharma() {
           }
           target="_blank"
         >
-          <img src={Discover} />
+          <motion.div
+            className="discoverPorject"
+            whileHover={{ scale: 1.4 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <img src={Discover} />
+          </motion.div>
         </Link>
       </div>
     </div>
