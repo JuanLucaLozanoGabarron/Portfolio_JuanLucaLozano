@@ -1,0 +1,98 @@
+#box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#informationLogin {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+#informationLogin h1 {
+  font-size: 40px;
+}
+
+#informationLogin h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#informationLogin p {
+  font-size: 12px;
+}
+
+#informationLogin img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+#demonstrationLogin {
+  width: 280px;
+  z-index: 1;
+}
+
+#demonstrationLogin img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
+
+  #informationLogin {
+    margin-top: 40px;
+    z-index: 4;
+    padding-left: 20px;
+  }
+
+  #demonstrationLogin {
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  #demonstrationLogin img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #box {
+    padding: 0px;
+    margin-left: -100px;
+  }
+
+  #informationLogin {
+    margin-top: 60px;
+    width: 600px;
+  }
+
+  #informationLogin p {
+    font-size: 14px;
+  }
+
+  #informationLogin h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  #informationLogin img {
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  #demonstrationLogin {
+    margin-left: 335px;
+    margin-top: 100px;
+    width: 550px;
+  }
+
+  #demonstrationLogin img {
+    margin-top: 60px;
+    width: 100%;
+  }
+}
