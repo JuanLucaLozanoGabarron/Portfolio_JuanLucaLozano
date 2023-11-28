@@ -172,6 +172,10 @@
     margin-top: -40px;
   }
 
+  #projectDiscover {
+    height: 180px;
+  }
+
   .discoverPorject {
     width: 100px;
     cursor: pointer;

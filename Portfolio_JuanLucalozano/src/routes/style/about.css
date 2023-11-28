@@ -18,6 +18,7 @@
 .cv {
   position: relative;
   width: 280px;
+  height: 250px;
   z-index: 5;
 }
 
@@ -43,7 +44,7 @@
   position: relative;
   display: inline-block;
   font-size: 40px;
-  animation: flip 4s infinite;
+  animation: flip 3s infinite;
   animation-delay: calc(0.2s * var(--i));
 }
 @keyframes flip {
