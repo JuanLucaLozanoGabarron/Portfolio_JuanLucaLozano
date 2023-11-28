@@ -8,6 +8,10 @@ import EvolutionCamera from "../components/EvolutionCamera";
 import Drones from "../components/Drones";
 import GoUp from "./images/go_up.png";
 import { motion } from "framer-motion";
+import Three from "../components/Three";
+import Dynamic from "../components/Dynamic";
+import Transform from "../components/Transform";
+import LoginEL from "../components/LoginEL";
 
 export default function Projects() {
   const ref = useRef(null);
@@ -22,6 +26,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, x: "-200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 0.5,
@@ -33,6 +38,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, x: "200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 1,
@@ -44,6 +50,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, x: "-200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 1,
@@ -55,6 +62,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, x: "200px" }}
           whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 1,
@@ -62,8 +70,55 @@ export default function Projects() {
         >
           <Drones />
         </motion.div>
+        <hr />
+        <motion.div
+          initial={{ opacity: 0, x: "-200px" }}
+          whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            delay: 1,
+          }}
+        >
+          <Three />
+        </motion.div>
+        <hr />
+        <motion.div
+          initial={{ opacity: 0, x: "200px" }}
+          whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            delay: 1,
+          }}
+        >
+          <Dynamic />
+        </motion.div>
+        <hr />
+        <motion.div
+          initial={{ opacity: 0, x: "-200px" }}
+          whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            delay: 1,
+          }}
+        >
+          <Transform />
+        </motion.div>
+        <hr />
+        <motion.div
+          initial={{ opacity: 0, x: "200px" }}
+          whileInView={{ opacity: 1, x: "1px" }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            delay: 1,
+          }}
+        >
+          <LoginEL />
+        </motion.div>
 
-        {/* <hr id="last"/> */}
         <div className="goUpProjects">
           <motion.div
             className="goUpButton"
