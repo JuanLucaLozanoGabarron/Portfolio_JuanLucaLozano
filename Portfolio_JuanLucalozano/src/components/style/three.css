@@ -1,0 +1,82 @@
+.informationThree {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+.informationThree h1 {
+  font-size: 40px;
+}
+
+.informationThree h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.informationThree p {
+  font-size: 12px;
+}
+
+.informationThree img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.demonstrationThree {
+  width: 280px;
+  z-index: 1;
+}
+
+.demonstrationThree img {
+  margin-top: -50px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+
+  .informationThree {
+    z-index: 4;
+    margin-top: 60px;
+  }
+
+  .demonstrationThree {
+    width: 500px;
+    margin-top: 120px;
+    margin-left: 20px;
+  }
+
+  .demonstrationThree img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    padding: 0px;
+  }
+
+  .informationThree {
+    margin-left: 250px;
+    width: 600px;
+  }
+
+  .informationThree p {
+    font-size: 14px;
+  }
+
+  .informationThree h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .informationThree img {
+    margin-top: 40px;
+    width: 100px;
+    cursor: pointer;
+  }
+}
