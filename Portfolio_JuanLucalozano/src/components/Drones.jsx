@@ -23,13 +23,6 @@ export default function Drones() {
             in the city that nature is a place where we can reconnect with
             ourselves without anyone’s help.
           </p>
-          <motion.div
-            className="discoverPorject"
-            whileHover={{ scale: 1.4 }}
-            whileTap={{ scale: 0.8 }}
-          >
-            <img src={Download} />
-          </motion.div>
         </div>
       </div>
     </>
