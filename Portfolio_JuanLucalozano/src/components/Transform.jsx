@@ -19,6 +19,15 @@ export default function Transform() {
           Using keyframes, I was able to make the image dynamic and make the
           landscape move.
         </p>
+        <p>
+          Want to see my methodology?{" "}
+          <Link
+            to={"https://github.com/JuanLucaLozanoGabarron/2d-to-3d"}
+            target="_blank"
+          >
+            Click here{" "}
+          </Link>
+        </p>
         <Link to={""} target="_blank">
           <motion.div
             className="discoverPorject"

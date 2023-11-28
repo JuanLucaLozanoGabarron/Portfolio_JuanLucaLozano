@@ -21,6 +21,15 @@ export default function Three() {
           <br />
           <br />
         </p>
+        <p>
+          Want to see my methodology?{" "}
+          <Link
+            to={"https://github.com/JuanLucaLozanoGabarron/Exercise-1_three.js"}
+            target="_blank"
+          >
+            Click here{" "}
+          </Link>
+        </p>
         <Link to={""} target="_blank">
           <motion.div
             className="discoverPorject"

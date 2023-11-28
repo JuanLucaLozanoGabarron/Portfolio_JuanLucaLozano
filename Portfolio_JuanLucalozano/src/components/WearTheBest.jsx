@@ -24,6 +24,17 @@ export default function WearTheBest() {
           lookbook of your choice. Lots of headaches in front of your wardrobe
           in the morning? Wear the best is the solution for you!
         </p>
+        <p>
+          Want to see my methodology?{" "}
+          <Link
+            to={
+              "https://github.com/EHB-MCT/web-2-frontend-22-23-JuanLucaLozanoGabarron"
+            }
+            target="_blank"
+          >
+            Click here{" "}
+          </Link>
+        </p>
         <Link
           to={
             "https://ehb-mct.github.io/web-2-frontend-22-23-JuanLucaLozanoGabarron/dist/index.html"

@@ -22,6 +22,17 @@ export default function EvolutionCamera() {
           I wanted to show them in a fun and inspiring way to make them more
           inspiring than the others.
         </p>
+        <p>
+          Want to see my methodology?{" "}
+          <Link
+            to={
+              "https://github.com/EHB-MCT/frontend-werkstuk-22-23-JuanLucaLozanoGabarron"
+            }
+            target="_blank"
+          >
+            Click here{" "}
+          </Link>
+        </p>
         <Link
           to={"https://wikiwall-2023.onrender.com/project/evolution_of_camera"}
           target="_blank"

@@ -23,6 +23,15 @@ export default function LoginEL() {
           site. With this login, everyone will have a personal page with their
           data.
         </p>
+        <p>
+          Want to see my methodology?{" "}
+          <Link
+            to={"https://github.com/JuanLucaLozanoGabarron/login_system"}
+            target="_blank"
+          >
+            Click here{" "}
+          </Link>
+        </p>
         <Link
           to={"https://wikiwall-2023.onrender.com/project/evolution_of_camera"}
           target="_blank"

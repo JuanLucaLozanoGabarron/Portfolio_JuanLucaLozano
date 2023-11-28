@@ -1,6 +1,8 @@
 import React from "react";
 import "./style/dynamic.css";
 import Portfolio from "./images/portfolio.png";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Dynamic() {
   return (
