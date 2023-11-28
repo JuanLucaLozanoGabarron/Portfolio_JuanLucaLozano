@@ -41,6 +41,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{
                 duration: 1.5,
                 delay: 1.3,
@@ -57,6 +58,7 @@ export default function Home() {
             ref={ref}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
           >
             <Header />
             <Follow />
@@ -74,19 +76,22 @@ export default function Home() {
                   opportunity <br />
                   to get to know me and discover my most beautiful projects.
                 </p>
-                <Link to="/my_projects">
-                  <motion.div
-                    className="discoverPorject"
-                    whileHover={{ scale: 1.4 }}
-                    whileTap={{ scale: 0.8 }}
-                  >
-                    <img src={DiscoverProject} />
-                  </motion.div>
-                </Link>
+                <div id="projectDiscover">
+                  <Link to="/my_projects">
+                    <motion.div
+                      className="discoverPorject"
+                      whileHover={{ scale: 1.4 }}
+                      whileTap={{ scale: 0.8 }}
+                    >
+                      <img src={DiscoverProject} />
+                    </motion.div>
+                  </Link>
+                </div>
               </div>
               <motion.div
                 initial={{ opacity: 0, x: "200px" }}
                 whileInView={{ opacity: 1, x: "1px" }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 0.7,
                 }}
