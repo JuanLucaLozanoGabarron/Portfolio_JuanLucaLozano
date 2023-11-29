@@ -30,7 +30,7 @@ export default function Three() {
             Click here{" "}
           </Link>
         </p>
-        <Link to={""} target="_blank">
+        <Link to={"https://realiz3d-hqds.onrender.com"} target="_blank">
           <motion.div
             className="discoverPorject"
             whileHover={{ scale: 1.4 }}
