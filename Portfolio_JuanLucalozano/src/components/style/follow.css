@@ -1,0 +1,34 @@
+.follow p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.follow img {
+  width: 24px;
+  margin-bottom: 10px;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  top: 300px;
+}
+
+.stroke {
+  border-left: 1px solid #000;
+  height: 60px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .follow {
+    left: 30px;
+    top: 300px;
+  }
+}

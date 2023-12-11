@@ -1,0 +1,96 @@
+#box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#information {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+#information h1 {
+  font-size: 40px;
+}
+
+#information h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#information p {
+  font-size: 12px;
+}
+
+#information img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+#demonstration {
+  width: 280px;
+  z-index: 1;
+}
+
+#demonstration img {
+  margin-top: -50px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
+
+  #information {
+    margin-top: 40px;
+    z-index: 4;
+    padding-left: 20px;
+  }
+
+  #demonstration {
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  #demonstration img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #box {
+    padding: 0px;
+    margin-left: -100px;
+  }
+
+  #information {
+    margin-top: 100px;
+    width: 600px;
+  }
+
+  #information p {
+    font-size: 14px;
+  }
+
+  #information h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  #information img {
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  #demonstration {
+    margin-left: 335px;
+  }
+
+  #demonstration img {
+    margin-top: 60px;
+  }
+}

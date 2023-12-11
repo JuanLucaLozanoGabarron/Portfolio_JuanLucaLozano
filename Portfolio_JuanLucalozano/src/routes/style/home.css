@@ -1,0 +1,220 @@
+.background {
+  width: 100vh;
+  height: 100vh;
+  background-image: url("background.png");
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader img {
+  width: 200px;
+}
+
+.homepage {
+  padding: 110px 90px;
+  overflow: hidden;
+}
+
+.info {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+.info h1 {
+  font-size: 40px;
+}
+.info p {
+  font-size: 12px;
+}
+
+.discoverPorject {
+  width: 80px;
+}
+
+.info img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.me {
+  width: 280px;
+  z-index: 1;
+}
+
+.me img {
+  margin-top: -50px;
+  width: 100%;
+}
+
+.goUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  padding-left: 90px;
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
+.goUpButton {
+  width: 80px;
+  cursor: pointer;
+}
+
+.goUp img {
+  width: 80px;
+}
+
+.videoContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: none;
+}
+
+.videoContainer video {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  touch-action: none;
+}
+
+@media (min-width: 768px) {
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+
+  .info {
+    margin-top: 150px;
+    z-index: 4;
+  }
+
+  .me {
+    z-index: 2;
+    width: 400px;
+    margin-top: 150px;
+    position: absolute;
+    right: 0px;
+    padding-top: 40px;
+  }
+
+  .me img {
+    margin-top: 20px;
+  }
+
+  .goUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .goUpButton {
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .goUp img {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loader img {
+    width: 360px;
+  }
+
+  .loader p {
+    font-size: 16px;
+  }
+
+  .homepage {
+    padding: 0px;
+  }
+
+  .info {
+    margin-left: 250px;
+    margin-top: 200px;
+    width: 700px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .info h1 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  #type {
+    margin-bottom: -60px;
+  }
+
+  #info {
+    margin-top: -40px;
+  }
+
+  #projectDiscover {
+    height: 180px;
+  }
+
+  .discoverPorject {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .info img {
+    margin-top: 40px;
+    width: 100px;
+  }
+
+  .me {
+    width: 700px;
+  }
+
+  .me img {
+    width: 700px;
+  }
+
+  .goUp {
+    width: 90%;
+  }
+
+  .goUpButton {
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .goUp img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 769px) {
+  .videoContainer video {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .videoContainer video {
+    height: 50%;
+  }
+}

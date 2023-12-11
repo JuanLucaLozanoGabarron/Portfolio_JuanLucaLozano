@@ -1,0 +1,91 @@
+.informationEvolution {
+  position: relative;
+  width: 280px;
+  z-index: 5;
+}
+
+.informationEvolution h1 {
+  font-size: 40px;
+}
+
+.informationEvolution h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.informationEvolution p {
+  font-size: 12px;
+}
+
+.informationEvolution img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.demonstrationEvolution {
+  width: 280px;
+  z-index: 1;
+}
+
+.demonstrationEvolution img {
+  margin-top: -50px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .boxEvolution {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+
+  .informationEvolution {
+    margin-top: 40px;
+    z-index: 4;
+  }
+
+  .demonstrationEvolution {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .demonstrationEvolution img {
+    margin-top: 20px;
+    width: 120%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .boxEvolution {
+    padding: 0px;
+  }
+
+  .informationEvolution {
+    margin-left: 250px;
+    margin-top: 100px;
+    width: 600px;
+  }
+
+  .informationEvolution p {
+    font-size: 14px;
+  }
+
+  .informationEvolution h1 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .informationEvolution img {
+    margin-top: 40px;
+    width: 100px;
+  }
+  
+  .demonstrationEvolution {
+    margin-top: 100px;
+    width: 500px;
+  }
+
+  .demonstrationEvolution img{
+    width: 100%;
+  }
+}

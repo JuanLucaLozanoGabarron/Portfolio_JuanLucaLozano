@@ -1,0 +1,72 @@
+.discover {
+  padding: 0px 90px 90px 90px;
+  margin-top: -60px;
+}
+
+.infoFind {
+  width: 280px;
+}
+
+.infoFind h1 {
+  font-size: 40px;
+}
+
+.infoFind p {
+  font-size: 12px;
+}
+
+.imageFind {
+  display: none;
+}
+
+.categories {
+  width: 280px;
+}
+
+.categories img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .discover {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+
+  .imageFind {
+    display: initial;
+    border: 1px solid;
+  }
+  .imageFind img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover {
+    margin-top: 200px;
+  }
+
+  .infoFind {
+    width: 100%;
+  }
+
+  .infoFind h1 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+  .infoFind p {
+    font-size: 14px;
+    margin-top: -40px;
+  }
+
+  .imageFind img {
+    width: 400px;
+  }
+
+  .categories img {
+    width: 600px;
+    margin-top: 40px;
+  }
+}

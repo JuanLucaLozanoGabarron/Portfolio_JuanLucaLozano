@@ -1,0 +1,163 @@
+.profile {
+  overflow: hidden;
+}
+
+.about {
+  padding: 110px 50px 110px 90px;
+  width: 280px;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.about p {
+  font-size: 12px;
+}
+
+.cv {
+  position: relative;
+  width: 280px;
+  height: 250px;
+  z-index: 5;
+}
+
+.cv img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.portrait {
+  width: 280px;
+  z-index: 4;
+}
+
+.portrait img {
+  width: 280px;
+  margin: -200px 0px 40px 80px;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  animation: flip 3s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .profile {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .portrait {
+    width: 260px;
+    margin-top: 150px;
+  }
+
+  .portrait img {
+    width: 300px;
+    margin: 0px;
+  }
+
+  .about {
+    width: 360px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .waviy span {
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  .about p {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+
+  .presentation {
+    width: 500px;
+  }
+
+  .portrait img {
+    width: 400px;
+  }
+
+  .name {
+    position: absolute;
+    text-align: right;
+    top: 400px;
+  }
+
+  .cv {
+    position: relative;
+    top: 180px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .cv img {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  svg {
+    display: block;
+    font: 10.5em "Montserrat";
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  }
+
+  .text-copy:nth-child(1) {
+    stroke: #4d163d;
+    animation-delay: -1;
+  }
+
+  .text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+  }
+
+  .text-copy:nth-child(3) {
+    stroke: #bd0034;
+    animation-delay: -3s;
+  }
+
+  .text-copy:nth-child(4) {
+    stroke: #bd0034;
+    animation-delay: -4s;
+  }
+
+  .text-copy:nth-child(5) {
+    stroke: #fdb731;
+    animation-delay: -5s;
+  }
+
+  @keyframes stroke-offset {
+    100% {
+      stroke-dashoffset: -35%;
+    }
+  }
+}
