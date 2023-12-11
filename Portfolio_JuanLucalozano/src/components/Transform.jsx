@@ -28,10 +28,7 @@ export default function Transform() {
             Click here{" "}
           </Link>
         </p>
-        <Link
-          to={"https://juanlucalozanogabarron.github.io/2d-to-3d/"}
-          target="_blank"
-        >
+        <Link to={""} target="_blank">
           <motion.div
             className="discoverPorject"
             whileHover={{ scale: 1.4 }}
