@@ -33,7 +33,7 @@ export default function LoginEL() {
           </Link>
         </p>
         <Link
-          to={"https://wikiwall-2023.onrender.com/project/evolution_of_camera"}
+          to={"https://login-system-0blr.onrender.com"}
           target="_blank"
         >
           <motion.div
